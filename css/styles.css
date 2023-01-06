@@ -1,0 +1,32 @@
+/* body background color #E5E5E5 */
+/* secondary background color #F4F4FD */
+/* top bar color #E7E9FC */
+
+/* main text color #434455*/
+/* headlines text color #2E2F42 */
+/* white text color #FFFFFF */
+/* accent blue color #4D5AE5 */
+/* secondary white text color #4D5AE5 */
+
+.page {
+    color:#434455;
+    background-color: #E5E5E5;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    color: #2E2F42;
+}
+
+/* site nav */
+.site-nav .link {
+    color: #2E2F42;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #000000;
+}
