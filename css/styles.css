@@ -7,10 +7,18 @@
 /* white text color #FFFFFF */
 /* accent blue color #4D5AE5 */
 /* secondary white text color #4D5AE5 */
-
+:root{
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5; 
+    --white-text-color: #FFFFFF;
+    --primary-bg-color: #E5E5E5;
+    --active-button-color:#4D5AE5;
+    --non-active-button-color: #F4F4FD;
+}
 .page {
-    color:#434455;
-    background-color: #E5E5E5;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
 }
 
 .list {
@@ -18,15 +26,52 @@
 }
 
 .logo {
-    color: #2E2F42;
+    color: var(--title-text-color);
 }
 
 /* site nav */
 .site-nav .link {
-    color: #2E2F42;
+    color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: #000000;
+}
+
+/* Hero */
+.hero-title {
+    color: var(--white-text-color);
+}
+
+/* Sections */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Features */
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+/* Team */
+.team-list .title {
+    color: var(--title-text-color);
+}
+
+/* Buttons */
+
+.button {
+    color: var(--accent-color);
+    background-color: var(--non-active-button-color)
+}
+
+.button.primary {
+    color: var(--white-text-color);
+    background-color: var(--active-button-color);
+}
+
+.button.secondary {
+    color: var(--accent-color);
+    background-color: var(--non-active-button-color)
 }
