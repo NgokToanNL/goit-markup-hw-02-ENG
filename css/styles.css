@@ -1,77 +1,195 @@
-/* body background color #E5E5E5 */
-/* secondary background color #F4F4FD */
-/* top bar color #E7E9FC */
+/* Main page */
 
-/* main text color #434455*/
-/* headlines text color #2E2F42 */
-/* white text color #FFFFFF */
-/* accent blue color #4D5AE5 */
-/* secondary white text color #4D5AE5 */
+/* Primary text color #434455 */
+/* Secondary text color (title) #2E2F42 */
+/* White text color #FFFFFF */
+/* Footer text color #E7E9FC */
+/* Logo color blue #4D5AE5 */
+/* logo color white #F4F4FD */
+/* Header bg color #FFFFFF */
+/* Hero bg color #2E2F42 */
+/* Benefits bg color #E5E5E5 */
+/* Team bg color #F4F4FD */
+/* Footer bg color #2E2F42 */
+/* Accent color #4D5AE5 */
+/* Button bg color #4D5AE5 */
+/* Button color #FFFFFF */
+
+/* Portfolio page */
+
+/* Button active bg #404BBF */
+/* Button non-active bg #E7E9FC */
+/* Button active text color #FFFFFF */
+/* Button non-active text color #4D5AE5 */
+
+
+
 :root{
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
-    --accent-color: #4D5AE5; 
     --white-text-color: #FFFFFF;
-    --primary-bg-color: #E5E5E5;
-    --active-button-color:#4D5AE5;
-    --non-active-button-color: #F4F4FD;
+    --footer-text-color: #E7E9FC;
+    --logo-color-blue: #4D5AE5;
+    --logo-color-white: #F4F4FD;
+    --header-bg-clr: #FFFFFF;
+    --hero-bg-clr: #2E2F42;
+    --benefits-bg-clr: #E5E5E5;
+    --team-bg-clr: #F4F4FD;
+    --footer-bg-clr: #2E2F42;
+    --accent-color: #4D5AE5; 
+    --btn-bg-clr: #4D5AE5;
+    --btn-txt-clr: #FFFFFF;
+    --card-bg-clr: #FFFFFF;
+    /* Portfolio page */
+    --btn-active-bg: #404BBF;
+    --btn-non-actvive-bg: #E7E9FC;
+    --btn-active-txt-clr: #FFFFFF;
+    --btn-non-active-txt-clr: #4D5AE5;
 }
+
 .page {
     color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
+    background-color: var(--benefits-bg-clr);
 }
+
+/* Сброс точек в списках */
 
 .list {
     list-style: none;
 }
 
+/* Page header */
+
+.page-header {
+    background-color: var(--header-bg-clr);
+}
+
+/* Logo */
+
 .logo {
     color: var(--title-text-color);
 }
 
+.logo > .blue {
+    color: var(--logo-color-blue);
+}
+
 /* site nav */
+
 .site-nav .link {
     color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #000000;
+    color: var(--accent-color);
+}
+
+.site-contact .link {
+    color: var(--primary-text-color)
+}
+
+.site-contact .link:hover,
+.site-contact .link:focus {
+    color: var(--accent-color);
 }
 
 /* Hero */
+
+.hero{
+    text-align: center;
+    background-color: var(--hero-bg-clr);
+}
 .hero-title {
     color: var(--white-text-color);
 }
 
-/* Sections */
+.button.primary {
+    color: var(--btn-txt-clr);
+    background-color: var(--btn-bg-clr);
+}
+
+/* Наші переваги */
+
+.benefits {
+    background-color: var(--benefits-bg-clr);
+}
+
 .section-title {
     color: var(--title-text-color);
 }
 
-/* Features */
-.feature-list .title {
+.section .text {
+
+}
+
+.benefits-list .title {
+    color: var(--title-text-color);
+}
+ 
+/* Чим ми займаємося */
+
+.section.work {
+    background-color: var(--benefits-bg-clr);
+}
+
+.section-title {
     color: var(--title-text-color);
 }
 
 /* Team */
+
+.section.team {
+    background-color: var(--team-bg-clr);
+}
+
 .team-list .title {
     color: var(--title-text-color);
 }
 
-/* Buttons */
-
-.button {
-    color: var(--accent-color);
-    background-color: var(--non-active-button-color)
+.team-list > .text {
+    color: var(--primary-text-color);
 }
 
-.button.primary {
-    color: var(--white-text-color);
-    background-color: var(--active-button-color);
+/* Footer */
+
+footer {
+    background-color: var(--footer-bg-clr);
 }
 
-.button.secondary {
-    color: var(--accent-color);
-    background-color: var(--non-active-button-color)
+.logo > .white {
+    color: var(--logo-color-white);
+}
+
+footer > .text {
+    color: var(--footer-text-color);
+}
+
+
+/* Portfolio */
+
+/* Buttons' list */
+.button-portfolio {
+    color: var(--btn-non-active-txt-clr);
+    background-color: var(--btn-non-actvive-bg);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--btn-active-txt-clr);
+    background-color: var(--btn-active-bg);
+}
+
+/* Content list */
+
+.content li {
+    background-color: var(--card-bg-clr);
+}
+
+.content .title {
+    color: var(--title-text-color);
+}
+
+.content p {
+    color: var(--primary-text-color)
 }
