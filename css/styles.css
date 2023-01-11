@@ -50,6 +50,9 @@
 .page {
     color: var(--primary-text-color);
     background-color: var(--benefits-bg-clr);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
 }
 
 /* Сброс точек в списках */
@@ -68,6 +71,15 @@
 
 .logo {
     color: var(--title-text-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .logo > .blue {
@@ -78,6 +90,11 @@
 
 .site-nav .link {
     color: var(--title-text-color);
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .site-nav .link:hover,
@@ -86,7 +103,8 @@
 }
 
 .site-contact .link {
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 .site-contact .link:hover,
@@ -102,11 +120,21 @@
 }
 .hero-title {
     color: var(--white-text-color);
+
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
 }
 
 .button.primary {
     color: var(--btn-txt-clr);
     background-color: var(--btn-bg-clr);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    letter-spacing: 0.04em;
 }
 
 /* Наші переваги */
@@ -115,16 +143,24 @@
     background-color: var(--benefits-bg-clr);
 }
 
-.section-title {
+.benefits .section-title {
     color: var(--title-text-color);
-}
-
-.section .text {
-
+    display: none;
 }
 
 .benefits-list .title {
     color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.section .text {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.5;
 }
  
 /* Чим ми займаємося */
@@ -135,6 +171,13 @@
 
 .section-title {
     color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    
+    text-align: center;
+    text-transform: capitalize;
 }
 
 /* Team */
@@ -145,10 +188,21 @@
 
 .team-list .title {
     color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    
+    text-align: center;
 }
 
-.team-list > .text {
+.team-list .text {
     color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    
+    text-align: center;
 }
 
 /* Footer */
@@ -163,6 +217,9 @@ footer {
 
 footer > .text {
     color: var(--footer-text-color);
+
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
