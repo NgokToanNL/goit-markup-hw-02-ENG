@@ -216,7 +216,7 @@
 
 /* Footer */
 
-footer {
+.footer {
     background-color: var(--footer-bg-clr);
 }
 
@@ -233,6 +233,11 @@ footer > .text {
 
 
 /* Portfolio */
+
+.content .section-title {
+    color: var(--title-text-color);
+    display: none;
+}
 
 /* Buttons' list */
 .button-portfolio {
@@ -258,14 +263,14 @@ footer > .text {
 
 /* Content list */
 
-.content li {
+.content-list .content-card {
     background-color: var(--card-bg-clr);
 }
 
-.content .title {
+.content-list .title {
     color: var(--title-text-color);
 }
 
-.content p {
+.content-list .text {
     color: var(--primary-text-color)
 }
