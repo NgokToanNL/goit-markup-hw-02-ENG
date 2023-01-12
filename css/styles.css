@@ -126,6 +126,10 @@
     line-height: 1.07;
 }
 
+.button {
+    cursor: pointer;
+}
+
 .button.primary {
     color: var(--btn-txt-clr);
     background-color: var(--btn-bg-clr);
