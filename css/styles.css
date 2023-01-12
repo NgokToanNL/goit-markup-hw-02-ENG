@@ -55,7 +55,7 @@
     letter-spacing: 0.02em;
 }
 
-/* Сброс точек в списках */
+/* Скидання всіх крапок у списках */
 
 .list {
     list-style: none;
@@ -123,13 +123,14 @@
 
     font-weight: 700;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
 }
 
 .button.primary {
     color: var(--btn-txt-clr);
     background-color: var(--btn-bg-clr);
 
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -186,6 +187,10 @@
     background-color: var(--team-bg-clr);
 }
 
+.team-list {
+    text-align: center;
+}
+
 .team-list .title {
     color: var(--title-text-color);
 
@@ -229,6 +234,16 @@ footer > .text {
 .button-portfolio {
     color: var(--btn-non-active-txt-clr);
     background-color: var(--btn-non-actvive-bg);
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
 }
 
 .button-portfolio:hover,
