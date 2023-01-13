@@ -97,7 +97,7 @@
     line-height: 1.5;
 }
 
-.site-nav .current {
+.site-nav .link.current {
     color: var(--accent-color);
 }
 
